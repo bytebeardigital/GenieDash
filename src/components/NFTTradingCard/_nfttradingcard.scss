@@ -1,0 +1,57 @@
+.nft {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    border-radius: 8px;
+    height: 250px;
+    margin-bottom: 22px;
+    &.gif {
+      margin: 0 auto 22px auto;
+    }
+  }
+  &__meta {
+    padding: 0px 10px 14px 10px;
+
+    &-name {
+      font-size: 1.2em;
+      font-weight: 400;
+      letter-spacing: 1px;
+      padding-bottom: 12px;
+    }
+
+    &--data {
+      align-items: center;
+      justify-content: space-between;
+      .eth {
+        align-items: center;
+
+        &__icon {
+          &--wrapper {
+            background-color: $black;
+            height: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 22px;
+            border-radius: 50%;
+          }
+          &--icon {
+            color: $white;
+            font-size: 0.8em;
+          }
+        }
+      }
+      &--likes {
+        display: flex;
+        align-items: center;
+
+        .like {
+          font-size: 0.8em;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

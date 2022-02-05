@@ -1,0 +1,83 @@
+{
+  "user": [
+    {
+      "email": "user@email.com",
+      "password": "password",
+      "username": "bytebeardigi",
+      "id": "c25acf8c-81bb-4d88-9e11-ba6155f94d00"
+    }
+  ],
+  "money": [
+    { "type": "expense", "name": "Rent", "price": 1010.1, "isPaid": false },
+    { "type": "expense", "name": "Car Insurance", "price": 142.55, "isPaid": false },
+    { "type": "income", "name": "InsideOut", "price": 1010.1, "isPaid": false },
+    { "type": "expense", "name": "T-Mobile", "price": 114.12, "isPaid": false },
+    { "type": "income", "name": "ByteBearDigital", "price": 1010.1, "isPaid": false },
+    { "type": "expense", "name": "Hosting", "price": 30.45, "isPaid": false }
+  ],
+  "wishes": [
+    {
+      "id": "68efe3f8-f6e2-403-b4e8-458545c837da",
+      "wish_name": "Samoyed",
+      "wish_price": 2200.78,
+      "is_completed": false,
+      "is_favorite": false
+    },
+    {
+      "id": "e9a930b5-7fc4-43d1-8fb1-8359b31a26b5",
+      "wish_name": "New Apt",
+      "wish_price": 42000.54,
+      "is_completed": false,
+      "is_favorite": false
+    }
+  ],
+  "quests": [
+    {
+      "id": "42a4ee6e-dc53-46d8-a131-9b33420c4408",
+      "goal": "Run a half marathon",
+      "acomplished": false
+    },
+    {
+      "id": "349d852e-cd5f-49fc-a4df-96f00aac0088",
+      "goal": "Read 2 books a quarter",
+      "acomplished": false
+    },
+    {
+      "id": "e45813d1-9d96-4f2c-b638-1f2776d63fbc",
+      "goal": "Run a half marathon",
+      "acomplished": false
+    }
+  ],
+  "collectables": [
+    {
+      "id": "6a273c71-cb7e-42b6-93b9-d26e9c8fe13b",
+      "meta": {
+        "name": "Foxy Kawaii",
+        "edition": "12/542",
+        "creator": "Friends of ByteBear",
+        "collection": "Kute Kawaii",
+        "type": "Open Edition",
+        "release_date": "Mar 23, 2021",
+        "value": 0.0098,
+        "likes": 22,
+        "nft_type": "gif"
+      },
+      "image": "./public/assets/images/foxy-gif.gif"
+    },
+    {
+      "id": "7b6ba198-08e9-4836-af43-45c655dcbb9c",
+      "meta": {
+        "name": "Nifty Bear",
+        "edition": "12332/542",
+        "creator": "Friends of ByteBear",
+        "collection": "Nifty Creatures",
+        "type": "Open Edition",
+        "release_date": "Mar 23, 2021",
+        "value": 0.01564,
+        "likes": 22,
+        "nft_type": "image"
+      },
+      "image": "./public/assets/images/nifty-bear.png"
+    }
+  ]
+}
