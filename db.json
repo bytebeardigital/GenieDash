@@ -59,7 +59,7 @@
         "type": "Open Edition",
         "release_date": "Mar 23, 2021",
         "value": 0.0098,
-        "likes": 22,
+        "likes": 12,
         "nft_type": "gif"
       },
       "image": "./assets/images/foxy-gif.gif"
@@ -78,6 +78,36 @@
         "nft_type": "image"
       },
       "image": "./assets/images/nifty-bear.png"
+    },
+    {
+      "id": "7b6ba198-08e9-4836-af43-45c655dcbb9c",
+      "meta": {
+        "name": "Way Too Cool",
+        "edition": "12332/542",
+        "creator": "Friends of ByteBear",
+        "collection": "Nifty Creatures",
+        "type": "Open Edition",
+        "release_date": "Mar 23, 2021",
+        "value": 0.00124,
+        "likes": 32,
+        "nft_type": "image"
+      },
+      "image": "./assets/images/too-cool.png"
+    },
+    {
+      "id": "7b6ba198-08e9-4836-af43-45c655dcbb9c",
+      "meta": {
+        "name": "Shiny Space Land",
+        "edition": "12332/542",
+        "creator": "Friends of ByteBear",
+        "collection": "Abstract MetaLands",
+        "type": "Open Edition",
+        "release_date": "Mar 23, 2021",
+        "value": 0.0124,
+        "likes": 92,
+        "nft_type": "image"
+      },
+      "image": "./assets/images/shint-space.png"
     }
   ]
 }
