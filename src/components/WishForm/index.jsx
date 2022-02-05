@@ -1,22 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './wishform.scss';
+import NumberFormat from 'react-number-format';
 
-function WishForm(props) {
-  console.log(props);
+function WishForm({ addWish }) {
+  const [inputValue, setInputValue] = useState({ wish_name: '', wish_price: 0 });
+
+  // const [addContact, setAddContact] = useState([]);
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setInputValue((prevState) => ({ ...prevState, [name]: value }));
+
+    console.log('value typed is:', value);
+  }
+
+  //handle for adding new Wish to WishList
+  function handleSubmit(event) {
+    event.preventDefault();
+    addWish(inputValue);
+  }
+
   return (
     <div className="wishform">
       <form className="d-flex">
-        <input className="mb-3 form-control wish_input me-3" type="text" placeholder="add wish" />
-        <input className="mb-3 form-control wishprice_input" type="text" placeholder="add price" />
+        <input
+          placeholder="Make a Wish"
+          name="wish_name"
+          className="mb-3 form-control wish_input me-3"
+          value={inputValue.wish_name}
+          onChange={handleChange}
+        />
+        <NumberFormat
+          value={inputValue.wish_price}
+          thousandSeparator={true}
+          prefix="$"
+          name="wish_price"
+          className="mb-3 form-control wishprice_input"
+          inputmode="numeric"
+          onChange={handleChange}
+        />
       </form>
-      <button className="add_wish_button btn">Add Wish</button>
+      <button className="add_wish_button btn" onClick={handleSubmit}>
+        Make a Wish
+      </button>
     </div>
   );
 }
 
 WishForm.propTypes = {
-  props: PropTypes.any
+  props: PropTypes.any,
+  addWish: PropTypes.func
 };
 
 export default WishForm;

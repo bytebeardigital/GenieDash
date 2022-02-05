@@ -62,7 +62,7 @@
         "likes": 22,
         "nft_type": "gif"
       },
-      "image": "./public/assets/images/foxy-gif.gif"
+      "image": "./assets/images/foxy-gif.gif"
     },
     {
       "id": "7b6ba198-08e9-4836-af43-45c655dcbb9c",
@@ -77,7 +77,7 @@
         "likes": 22,
         "nft_type": "image"
       },
-      "image": "./public/assets/images/nifty-bear.png"
+      "image": "./assets/images/nifty-bear.png"
     }
   ]
 }
