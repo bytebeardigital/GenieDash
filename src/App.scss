@@ -18,12 +18,22 @@ p {
   border: 2px;
 }
 
+.site-wrap {
+  flex-wrap: nowrap;
+  @include phone {
+    flex-wrap: wrap;
+  }
+}
+
 .dash-wrapper {
   border-radius: 20px;
   background-color: $white;
 
   box-shadow: 0 0 4px rgba(grey, 0.5);
   transition: all ease-in-out 0.4s;
+  @include phone {
+    margin-bottom: 14px !important;
+  }
 }
 
 .sidebar {
@@ -34,8 +44,27 @@ p {
   background-color: rgba($primary, 0.4);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
 
+  @include phone {
+    min-height: 26vh;
+    height: 25%;
+    width: 100%;
+  }
+
   &__navigation {
     margin-top: 50px;
+    @include phone {
+      width: 80%;
+      margin: 12px auto 0 auto;
+    }
+
+    &--inner {
+      flex-direction: column;
+
+      @include phone {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
     .main-link {
       margin-bottom: 12px;
       font-size: 1em;
@@ -64,6 +93,10 @@ p {
     width: 100%;
     object-fit: cover;
     max-height: 350px;
+    @include phone {
+      width: 75px;
+      height: 75px;
+    }
   }
   &--username {
     text-transform: uppercase;

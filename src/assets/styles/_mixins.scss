@@ -37,3 +37,34 @@
 @mixin h6 {
   font-size: 0.75rem;
 }
+
+@mixin mobile {
+  @media (min-width: 350px) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin desktop-md {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin monitor {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}

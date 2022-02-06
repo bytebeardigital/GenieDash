@@ -6,19 +6,23 @@ import NumberFormat from 'react-number-format';
 function WishForm({ addWish }) {
   const [inputValue, setInputValue] = useState({ wish_name: '', wish_price: 0 });
 
-  // const [addContact, setAddContact] = useState([]);
-
   function handleChange(event) {
     const { name, value } = event.target;
     setInputValue((prevState) => ({ ...prevState, [name]: value }));
-
-    console.log('value typed is:', value);
   }
 
   //handle for adding new Wish to WishList
   function handleSubmit(event) {
     event.preventDefault();
-    addWish(inputValue);
+    if (inputValue.wish_name.trim()) {
+      addWish(inputValue);
+    } else {
+      alert(`Enter a wish and it's price`);
+    }
+    setInputValue({
+      wish_name: '',
+      wish_price: 0
+    });
   }
 
   return (

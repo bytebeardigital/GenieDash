@@ -1,0 +1,27 @@
+.cryptoCard {
+  padding: 12px;
+  background: rgba($secondary, 0.25);
+  box-shadow: 0px 0px 2px -3px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+
+  transition: all ease-in-out 1s;
+
+  &__img {
+    width: 14%;
+    height: 14%;
+    object-fit: cover;
+  }
+  &__meta {
+    .currentPrice {
+      text-align: left;
+      letter-spacing: 2px;
+    }
+    .usdPrice {
+      text-align: right;
+      font-size: 0.8em;
+      font-weight: $regular;
+    }
+  }
+}

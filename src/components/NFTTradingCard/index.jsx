@@ -4,7 +4,6 @@ import { FaEthereum, FaHeart } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 
 function NFTTradingCard({ data }) {
-  console.log(data.meta.nft_type);
   const renderNFTImage = () => {
     if (data.meta.nft_type == 'gif') {
       return <img src={data.image} alt="" className="nft__image gif" width="75%" />;
@@ -22,7 +21,7 @@ function NFTTradingCard({ data }) {
             <span className="eth__icon--wrapper me-1">
               <FaEthereum className="eth__icon--icon" />
             </span>
-            <p>{data.meta.value}</p>
+            <p className="cryptoValue">{data.meta.value}</p>
           </div>
           <div className="nft__meta--data--likes d-flex">
             <FaHeart className="me-1" />

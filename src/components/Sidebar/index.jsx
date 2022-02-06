@@ -9,17 +9,17 @@ import { FaMoneyBillWave } from 'react-icons/fa';
 
 function Sidebar() {
   return (
-    <div className="col-auto col-md-4 col-xl-2 px-sm-2 px-0 text-white sidebar">
+    <div className="col-auto col-12 col-sm-3 col-lg-2 px-sm-2 px-0 text-white sidebar">
       <div className="sidebar__inner px-3 pt-3">
         <div className="siderbar--heading text-center">
-          <img src={logo} alt="" className="mb-2 userInfo__headshot" height="175" />
+          <img src={logo} alt="" className=" userInfo__headshot" height="175" />
           <p className="userInfo--username" id="site_author">
             ByteBearDigi
           </p>
         </div>
         <div className="sidebar__navigation">
           <ul
-            className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+            className="nav nav-pills sidebar__navigation--inner  mb-sm-auto mb-0 align-items-center align-items-sm-start"
             id="menu">
             <li className="nav-item main-link">
               <a href="#" className="nav-link align-middle px-0 text-white">
